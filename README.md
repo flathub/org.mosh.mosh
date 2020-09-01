@@ -1,8 +1,10 @@
 SSH Key-based Authentication
 =============================
 
-By default, this package cannot access your SSH keys. If you want key-based authentication to work, you'll need to apply some overrides:
+By default, this package cannot access your SSH keys. If you want key-based authentication to work, start ssh-agent outside flatpak and add override:
 
 ```bash
-flatpak override --user --filesystem=~/.ssh --filesystem=$SSH_AUTH_SOCK org.mosh.mosh
+flatpak override --user --socket=ssh-auth org.mosh.mosh
 ```
+
+Note that flatpak 1.0.0 or higher is required.
