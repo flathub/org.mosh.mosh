@@ -1,7 +1,7 @@
 {
   "app-id": "org.mosh.mosh",
   "runtime": "org.freedesktop.Platform",
-  "runtime-version": "19.08",
+  "runtime-version": "20.08",
   "sdk": "org.freedesktop.Sdk",
   "command": "mosh",
   "separate-locales": false,
@@ -69,8 +69,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://www.cpan.org/src/5.0/perl-5.30.0.tar.xz",
-          "sha256": "ac501cad4af904d33370a9ea39dbb7a8ad4cb19bc7bc8a9c17d8dc3e81ef6306"
+          "url": "https://www.cpan.org/src/5.0/perl-5.32.0.tar.xz",
+          "sha256": "6f436b447cf56d22464f980fac1916e707a040e96d52172984c5d184c09b859b"
         },
         {
           "type": "script",
