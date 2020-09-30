@@ -7,7 +7,9 @@
   "separate-locales": false,
   "finish-args": [
     "--share=network",
-    "--persist=.ssh"
+    "--persist=.ssh",
+    "--socket=ssh-auth",
+    "--require-version=1.0.0"
   ],
   "cleanup": [
     "*.a",
