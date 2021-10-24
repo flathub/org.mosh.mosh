@@ -1,6 +1,6 @@
 app-id: org.mosh.mosh
 runtime: org.freedesktop.Platform
-runtime-version: '20.08'
+runtime-version: '21.08'
 sdk: org.freedesktop.Sdk
 command: mosh
 separate-locales: false
@@ -63,8 +63,8 @@ modules:
       - "*.pod"
     sources:
       - type: archive
-        url: https://www.cpan.org/src/5.0/perl-5.32.0.tar.xz
-        sha256: 6f436b447cf56d22464f980fac1916e707a040e96d52172984c5d184c09b859b
+        url: https://www.cpan.org/src/5.0/perl-5.34.0.tar.xz
+        sha256: 82c2e5e5c71b0e10487a80d79140469ab1f8056349ca8545140a224dbbed7ded
       - type: script
         dest-filename: configure
         commands:
