@@ -44,7 +44,7 @@
   </description>
   <developer_name>Keith Winstein, John Hood, et al.</developer_name>
   <releases>
-    <release date="2017-07-22" version="1.3.2">
+    <release version="1.3.2" date="2017-07-22">
       <p>Platform support:</p>
       <ul>
         <li>Explicitly enable binding to both IPv4 and IPv6 addresses.
@@ -73,7 +73,7 @@
       <image>https://mosh.org/mosh.png</image>
     </screenshot>
   </screenshots>
-  <content_rating type="oars-1.1" />
+  <content_rating type="oars-1.1"/>
   <url type="homepage">https://mosh.org/</url>
   <url type="bugtracker">https://github.com/mobile-shell/mosh/issues</url>
   <url type="help">https://mailman.mit.edu/mailman/listinfo/mosh-users</url>
