@@ -9,7 +9,7 @@ finish-args:
   - --share=network
   - --persist=.ssh
   - --socket=ssh-auth
-  - --require-version='1.0.0'
+  - --require-version=1.0.0
 
 cleanup:
   - '*.a'
