@@ -77,8 +77,8 @@ modules:
       - --disable-server
     sources:
       - type: archive
-        url: https://mosh.org/mosh-1.3.2.tar.gz
-        sha256: da600573dfa827d88ce114e0fed30210689381bbdcff543c931e4d6a2e851216
+        url: https://mosh.org/mosh-1.4.0.tar.gz
+        sha256: 872e4b134e5df29c8933dff12350785054d2fd2839b5ae6b5587b14db1465ddd
         x-checker-data:
           type: json
           url: https://api.github.com/repos/mobile-shell/mosh/releases/latest
