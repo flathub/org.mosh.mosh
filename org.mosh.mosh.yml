@@ -77,14 +77,14 @@ modules:
       - --disable-server
     sources:
       - type: archive
-        url: https://mosh.org/mosh-1.4.0.tar.gz
+        url: https://github.com/mobile-shell/mosh/releases/download/mosh-1.4.0/mosh-1.4.0.tar.gz
         sha256: 872e4b134e5df29c8933dff12350785054d2fd2839b5ae6b5587b14db1465ddd
         x-checker-data:
           type: json
           url: https://api.github.com/repos/mobile-shell/mosh/releases/latest
           version-query: .tag_name | sub("^mosh-"; "")
           url-query: >-
-            "https://mosh.org/mosh-\($version).tar.gz"
+            .assets[] | select(.name=="mosh-" + $version + ".tar.gz") | .browser_download_url
       - type: file
         path: org.mosh.mosh.appdata.xml
     post-install:
