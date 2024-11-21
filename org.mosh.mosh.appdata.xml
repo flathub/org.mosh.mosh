@@ -44,7 +44,33 @@
   </description>
   <developer_name>Keith Winstein, John Hood, et al.</developer_name>
   <releases>
-    <release version="1.4.0" date="2022-10-31"/>
+    <release version="1.4.0" date="2022-10-31">
+      <url>https://mosh.org/mosh-1.4.0-released.html</url>
+      <description>
+        <p>New features:</p>
+        <ul>
+          <li>Support OSC 52 clipboard copy integration (Alex Cornejo)</li>
+          <li>Allow non-inserting prediction (--predict-overwrite) (John Hood)</li>
+          <li>Don't do prediction on large pastes into mosh-client (John Hood)</li>
+          <li>Add true color support (Kang Jianbin)</li>
+          <li>Add syslog logging of connections (Tom Judge)</li>
+          <li>If exec()ing the remote command fails, pause briefly (John Hood)</li>
+        </ul>
+
+        <p>Bug fixes:</p>
+
+        <ul>
+          <li>ignore unknown renditions (Keith Winstein)</li>
+          <li>Overlays were getting set to the wrong colors (John Hood)</li>
+          <li>Fix issue with incorrect true-color background erase colors (John Hood)</li>
+          <li>Use HAVE_UTEMPTER instead of HAVE_UPTEMPTER (Michael Jarvis)</li>
+          <li>Apply latest consecutive resize, not earliest (Peter Edwards)</li>
+          <li>Use CLOCK_MONOTONIC_RAW when available (Harry Sintonen)</li>
+          <li>Add tmux and alacritty to title_term_types (Naïm Favier)</li>
+          <li>Don't sometimes hang just after launching ssh (Kalle Samuels)</li>
+        </ul>
+      </description>
+    </release>
     <release version="1.3.2" date="2017-07-22">
       <description>
         <p>Platform support:</p>
